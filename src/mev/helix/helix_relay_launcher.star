@@ -128,6 +128,8 @@ def launch_helix_relay(
 
     env_vars = {
         "RELAY_KEY": constants.DEFAULT_MEV_SECRET_KEY,
+        "POSTGRES_PASSWORD": 'postgres',
+        "ADMIN_TOKEN": 'test'
     }
 
     # Use provided relay_image if available, otherwise use mev_params.mev_relay_image
